@@ -4,163 +4,181 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Le domaine – Domaine Vincent Denis</title>
-<meta name="description" content="L'histoire du Domaine Vincent Denis à Montlouis-sur-Loire et son engagement en agriculture de conservation.">
+<meta name="description" content="De père en fils à Montlouis-sur-Loire : l'histoire du Domaine Vincent Denis et son agriculture de conservation.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap">
-<link rel="preload" as="image" href="assets/images/terroir.webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Manrope:wght@400;500;600;700&family=Parisienne&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="age-lock">
+<body>
 
 <a class="skip" href="#contenu">Aller au contenu</a>
 
-    <!-- VERIFICATION AGE -->
-    <div class="age-overlay" id="agePopup" role="dialog" aria-modal="true" aria-labelledby="ageVerifTitle">
-        <div class="age-modal">
-            <div class="age-logo">VINCENT DENIS<span>Montlouis-sur-Loire</span></div>
-            <h2 id="ageVerifTitle"><span data-en="Age verification">Vérification d'âge</span></h2>
-            <p><span data-en="This website contains information about alcoholic beverages. You must be of legal drinking age to enter.">Ce site contient des informations relatives aux boissons alcoolisées. Vous devez avoir l'âge légal pour accéder à son contenu.</span></p>
-            <div class="age-buttons">
-                <button type="button" id="yesAge"><span data-en="I am of legal age">J'ai l'âge légal</span></button>
-                <button type="button" id="noAge"><span data-en="Leave">Quitter</span></button>
-            </div>
-        </div>
-    </div>
+<header class="header">
+    <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Domaine Vincent Denis, accueil"><b>Vincent Denis</b><small>Montlouis-sur-Loire</small></a>
 
-    <div id="site-content">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav"><span>Menu</span><i></i></button>
 
-        <!-- LOADER -->
-        <div class="loader" aria-hidden="true">
-            <div class="loader-logo">VINCENT DENIS<span>Montlouis-sur-Loire</span></div>
-        </div>
-
-        <!-- HEADER -->
-        <header class="header">
-            <a href="index.html" class="logo" aria-label="Domaine Vincent Denis, accueil">VINCENT DENIS<span>Montlouis-sur-Loire</span></a>
-
-            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
-                <span></span><span></span><span></span>
-            </button>
-
-            <nav id="mainNav" aria-label="Navigation principale">
-                <ul><li><a href="domaine.html" aria-current="page"><span data-en="The estate">Le domaine</span></a></li><li><a href="vins.html"><span data-en="Our wines">Les vins</span></a></li><li><a href="contact.html"><span data-en="Visit &amp;amp; contact">Visite &amp; contact</span></a></li></ul>
-                <a class="nav-shop" href="https://domaine-vincent-denis.plugwine.com" target="_blank" rel="noopener"><span data-en="Online shop">E-boutique</span></a>
+        <nav id="mainNav" aria-label="Navigation principale">
+            <ul><li><a href="domaine.html" aria-current="page"><span data-en="The estate">Le domaine</span></a></li><li><a href="vins.html"><span data-en="Our wines">Nos vins</span></a></li><li><a href="visite.html"><span data-en="Visit">Visite</span></a></li></ul>
+            <div class="nav-actions">
+                <a class="btn" href="https://domaine-vincent-denis.plugwine.com" target="_blank" rel="noopener"><span data-en="Shop">E-boutique</span> <span class="arrow" aria-hidden="true">→</span></a>
                 <div class="lang-switch" role="group" aria-label="Langue">
                     <button type="button" data-lang="fr" aria-pressed="true">FR</button>
                     <button type="button" data-lang="en" aria-pressed="false">EN</button>
                 </div>
-            </nav>
-        </header>
-
-        <main id="contenu">
-
-            <section class="page-hero hero-domaine">
-                <div class="page-overlay"></div>
-                <div class="page-title">
-                    <p class="subtitle" data-en="The estate">Le domaine</p>
-                    <h1 data-en="A family story">Une histoire de famille</h1>
-                </div>
-            </section>
-
-            <section class="split">
-                <div>
-                    <p class="subtitle" data-en="For several generations">Depuis plusieurs générations</p>
-                    <h2 data-en="From vines to fields">De la vigne aux champs</h2>
-                    <p data-en="Heir to several generations of Montlouis winegrowers, Vincent Denis took over his grandparents&#x27; and parents&#x27; estate in 1999.">Héritier de plusieurs générations de vignerons à Montlouis, Vincent Denis reprend en 1999 l'exploitation de ses grands-parents et de ses parents.</p>
-                    <p data-en="Like his father, he runs two farms in one: 32 hectares of vines and 80 hectares of cereals — wheat, barley, sorghum, millet, rapeseed, buckwheat. A farmer&#x27;s outlook as much as a winemaker&#x27;s.">Comme son père, il mène une double activité : 32 hectares de vignes et 80 hectares de céréales — blé, orge, sorgho, millet, colza, sarrasin. Une vision d'agriculteur autant que de vigneron.</p>
-                </div>
-                <div class="split-image">
-                    <img src="assets/images/vigne-travail.webp" alt="Travail de la vigne" loading="lazy" decoding="async">
-                </div>
-            </section>
-
-            <section class="timeline">
-                <div class="section-head">
-                    <p class="subtitle" data-en="Milestones">Repères</p>
-                    <h2 data-en="Key dates">Quelques dates</h2>
-                </div>
-                <ol>
-                    <li><strong>1999</strong><p data-en="Vincent takes over the family estate.">Vincent reprend l'exploitation familiale.</p></li>
-                    <li><strong>2009</strong><p data-en="Terra Vitis certification: sustainable viticulture, audited every year.">Certification Terra Vitis : une viticulture raisonnée, contrôlée chaque année.</p></li>
-                    <li><strong>2020</strong><p data-en="Au Cœur des Sols label and the first Coulées Douces wines.">Label Au Cœur des Sols et naissance des cuvées Coulées Douces.</p></li>
-                    <li><strong><span data-en="Today">Aujourd'hui</span></strong><p data-en="32 hectares of vines, 5 of them vinified at the estate plot by plot.">32 hectares de vignes, dont 5 vinifiés au domaine parcelle par parcelle.</p></li>
-                </ol>
-            </section>
-
-            <section class="band band-vigne">
-                <div>
-                    <p class="subtitle" data-en="Our philosophy">Notre philosophie</p>
-                    <h2 data-en="“The soil is a heritage to preserve, not just to farm.”">« La terre est un capital à préserver, pas seulement à exploiter. »</h2>
-                </div>
-            </section>
-
-            <section class="engagements" id="engagements">
-                <article class="engagement">
-                    <span class="num">01</span>
-                    <h3 data-en="Conservation agriculture">Agriculture de conservation</h3>
-                    <p data-en="Cover crops between rows and minimal tillage: the soil stays alive and keeps its water and structure.">Couverts végétaux entre les rangs et travail du sol limité : la terre reste vivante, garde son eau et sa structure.</p>
-                </article>
-                <article class="engagement">
-                    <span class="num">02</span>
-                    <h3 data-en="Terra Vitis">Terra Vitis</h3>
-                    <p data-en="Since 2009: sustainable viticulture that respects people and the environment, audited every year.">Depuis 2009 : une viticulture raisonnée, respectueuse de l'environnement et des personnes, contrôlée chaque année.</p>
-                </article>
-                <article class="engagement">
-                    <span class="num">03</span>
-                    <h3 data-en="Au Cœur des Sols">Au Cœur des Sols</h3>
-                    <p data-en="Since 2020: a label recognising farmers committed to soil health and fertility.">Depuis 2020 : un label qui reconnaît les agriculteurs engagés pour la santé et la fertilité des sols.</p>
-                </article>
-            </section>
-
-            <section class="band band-cave">
-                <div>
-                    <p class="subtitle" data-en="Visit the estate">Visite du domaine</p>
-                    <h2 data-en="Come and meet us">Venez nous rencontrer</h2>
-                    <a href="contact.html" class="button"><span data-en="Book a visit">Réserver une visite</span></a>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-logo">VINCENT DENIS<span>Montlouis-sur-Loire</span></div>
-                    <p style="margin-top:22px"><span data-en="Winegrowers in Montlouis-sur-Loire for several generations.">Vigneron à Montlouis-sur-Loire depuis plusieurs générations.</span></p>
-                </div>
-                <div>
-                    <h3><span data-en="Contact details">Nos coordonnées</span></h3>
-                    <p>56 rue de la Pousterie<br>37270 Montlouis-sur-Loire<br>
-                    <a href="tel:+33247450717">02 47 45 07 17</a><br>
-                    <a href="mailto:domainevincentdenis@gmail.com">domainevincentdenis@gmail.com</a></p>
-                </div>
-                <div>
-                    <h3><span data-en="The estate">Le domaine</span></h3>
-                    <ul>
-                        <li><a href="domaine.html"><span data-en="Our story">Notre histoire</span></a></li>
-                        <li><a href="vins.html"><span data-en="Our wines">Les vins</span></a></li>
-                        <li><a href="contact.html"><span data-en="Visits by appointment">Visite sur rendez-vous</span></a></li>
-                        <li><a href="https://domaine-vincent-denis.plugwine.com" target="_blank" rel="noopener"><span data-en="Online shop">E-boutique</span></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3><span data-en="Follow us">Suivez-nous</span></h3>
-                    <a class="social" href="https://www.facebook.com/p/Domaine-Vincent-Denis-100063820932857/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 320 512" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>© <span class="year">2026</span> Domaine Vincent Denis · <a href="#"><span data-en="Legal notice">Mentions légales</span></a> · <a href="#"><span data-en="Privacy">Confidentialité</span></a></p>
-                <p><span data-en="Alcohol abuse is dangerous for your health — please drink responsibly.">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</span></p>
-            </div>
-        </footer>
-
-        <div class="mockup-badge" role="note"><span data-en="Mock-up · Raphaël Proudhon · placeholder photos">Maquette · Raphaël Proudhon · photos provisoires</span></div>
-
+        </nav>
     </div>
+</header>
 
-    <script src="assets/js/script.js" defer></script>
+<main id="contenu">
 
+<section class="page-head">
+    <div class="wrap">
+        <span class="script" data-en="Our estate…">Notre domaine…</span>
+        <h1 data-en="Father &lt;em&gt;to son&lt;/em&gt;">De père <em>en fils</em></h1>
+        <p data-en="A winegrower and cereal farmer like his father and grandparents before him, Vincent Denis farms 32 hectares of vines and 80 hectares of cereals in Montlouis-sur-Loire.">Vigneron et céréalier, comme son père et ses grands-parents avant lui, Vincent Denis cultive 32 hectares de vignes et 80 hectares de céréales à Montlouis-sur-Loire.</p>
+    </div>
+</section>
+<div class="wrap"><div class="strata" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
+
+<section class="section">
+    <div class="wrap family">
+        <div class="arch"><img src="assets/images/vigneron.webp" alt="Vigneron dans les vignes (photo provisoire)" loading="lazy"></div>
+        <div>
+            <span class="script" data-en="Our estate…">Notre domaine…</span>
+            <blockquote><span data-en="I chose to carry on and extend my family&#x27;s work of many generations, while using today&#x27;s tools.">J'ai choisi de continuer et de prolonger le travail de ma famille depuis des générations, tout en utilisant les outils d'aujourd'hui.</span></blockquote>
+            <p data-en="My work is twofold: like my father, I grow cereals and run the wine estate, which has grown since I took over. — &lt;strong&gt;Vincent Denis&lt;/strong&gt;">Mon activité est double : comme mon père, je cultive des céréales et j'exploite le domaine viticole, qui s'est agrandi depuis le début de mon installation. — <strong>Vincent Denis</strong></p>
+            <ol class="years">
+                <li><strong>1999</strong><span data-en="Vincent takes over the family estate">Vincent reprend le domaine familial</span></li>
+                <li><strong>2009</strong><span data-en="Terra Vitis certification">Certification Terra Vitis</span></li>
+                <li><strong>2020</strong><span data-en="Au Cœur des Sols and first Coulées Douces">Au Cœur des Sols et premières Coulées Douces</span></li>
+            </ol>
+            
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="wrap figures">
+        <div><strong>32 ha</strong><span data-en="of vines">de vignes</span></div>
+        <div><strong>80 ha</strong><span data-en="of cereals">de céréales</span></div>
+        <div><strong>5 ha</strong><span data-en="vinified as Coulées Douces">vinifiés en Coulées Douces</span></div>
+        <div><strong>1999</strong><span data-en="Vincent takes over">reprise par Vincent</span></div>
+    </div>
+</section>
+
+<section class="section section-green" id="sols">
+    <div class="wrap soil">
+        <div>
+            <span class="script" data-en="Living soils…">Nos sols vivants…</span>
+            <h2 data-en="Beneath our feet,&lt;br&gt;&lt;em&gt;a soil at work&lt;/em&gt;">Sous nos pieds,<br><em>un sol qui travaille</em></h2>
+            <p data-en="Vincent farms his vines using conservation agriculture: protecting the soil instead of turning it over. An approach recognised by the Terra Vitis (since 2009) and Au Cœur des Sols (since 2020) labels.">Vincent cultive ses vignes en agriculture de conservation : on protège la terre au lieu de la retourner. Une démarche reconnue par les labels Terra Vitis (depuis 2009) et Au Cœur des Sols (depuis 2020).</p>
+            <ul class="practices">
+                <li><span>1</span><div><b data-en="Cover">Couvrir</b><p data-en="The soil is never left bare.">Le sol n'est jamais laissé nu.</p></div></li>
+                <li><span>2</span><div><b data-en="Till less">Moins travailler</b><p data-en="We preserve soil structure and life.">On préserve la structure et la vie du sol.</p></div></li>
+                <li><span>3</span><div><b data-en="Rotate">Faire tourner</b><p data-en="A cereal farmer&#x27;s eye, applied to vines.">Le regard d'un céréalier, appliqué à la vigne.</p></div></li>
+            </ul>
+        </div>
+        <div>
+            <div class="profile" role="group" aria-label="Coupe du sol, cliquez sur une couche">
+            <button class="layer l-couvert" type="button" aria-expanded="false" aria-controls="layer-couvert"><span><b data-en="Cover crops">Couvert végétal</b><br><small data-en="on top">en surface</small></span></button>
+            <div class="layer-text" id="layer-couvert"><p data-en="Sown plants between the rows shield the soil from sun and rain, feed underground life and limit erosion.">Entre les rangs, des plantes semées protègent le sol du soleil et de la pluie, nourrissent la vie souterraine et limitent l'érosion.</p></div>
+            <button class="layer l-vivant" type="button" aria-expanded="false" aria-controls="layer-vivant"><span><b data-en="Living soil">Terre vivante</b><br><small data-en="earthworms, fungi">vers de terre, champignons</small></span></button>
+            <div class="layer-text" id="layer-vivant"><p data-en="Barely tilled, the soil keeps its structure: earthworms and fungi move air and water down to the roots.">Peu travaillée, la terre garde sa structure : vers de terre et champignons font circuler l'air et l'eau jusqu'aux racines.</p></div>
+            <button class="layer l-argile" type="button" aria-expanded="false" aria-controls="layer-argile"><span><b data-en="Clay, limestone &amp;amp; flint">Argilo-calcaire &amp; silex</b><br><small data-en="Montlouis terroirs">les terroirs de Montlouis</small></span></button>
+            <div class="layer-text" id="layer-argile"><p data-en="The typical Montlouis soils that give chenin its tension and minerality.">Les sols typiques de Montlouis, qui donnent au chenin sa tension et sa minéralité.</p></div>
+            <button class="layer l-tuffeau" type="button" aria-expanded="false" aria-controls="layer-tuffeau"><span><b data-en="Tuffeau limestone">Tuffeau</b><br><small data-en="the bedrock">la roche mère</small></span></button>
+            <div class="layer-text" id="layer-tuffeau"><p data-en="Touraine&#x27;s white stone, into which the cellars where our wines mature are dug.">La pierre blanche de Touraine, dans laquelle sont creusées les caves où mûrissent les vins.</p></div>
+            </div>
+            <p style="margin-top:14px;font-size:14px;opacity:.8" data-en="Tap a layer to explore the soil.">Touchez une couche pour explorer le sol.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="script" data-en="Commitments…">Nos engagements…</span>
+                <h2 data-en="Recognised, &lt;em&gt;audited&lt;/em&gt;">Reconnus, <em>contrôlés</em></h2>
+            </div>
+            <p data-en="Three markers that guarantee how we work, from vine to bottle.">Trois repères qui garantissent notre façon de travailler, de la vigne à la bouteille.</p>
+        </div>
+        <div class="labels">
+            <article class="label-card"><span class="year-tag" data-en="Since 2009">Depuis 2009</span><h3>Terra Vitis</h3><p data-en="Sustainable viticulture that respects people and the environment, audited every year.">Une viticulture raisonnée, respectueuse de l'environnement et des personnes, contrôlée chaque année.</p></article>
+            <article class="label-card"><span class="year-tag" data-en="Since 2020">Depuis 2020</span><h3>Au Cœur des Sols</h3><p data-en="The label for farmers committed to soil health and fertility.">Le label des agriculteurs engagés pour la santé et la fertilité des sols.</p></article>
+            <article class="label-card"><span class="year-tag" data-en="Appellation">Appellation</span><h3>Montlouis-sur-Loire</h3><p data-en="A 100% chenin appellation between the Loire and the Cher, facing Vouvray.">Une AOC 100 % chenin, entre Loire et Cher, face à Vouvray.</p></article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-raised">
+    <div class="wrap visit">
+        <div class="arch"><img src="assets/images/paysage-vigne.webp" alt="Coteaux de vignes (photo provisoire)" loading="lazy"></div>
+        <div>
+            <span class="script" data-en="Visit…">Visite…</span>
+            <h2 data-en="Come and taste &lt;em&gt;at the estate&lt;/em&gt;">Venez déguster <em>au domaine</em></h2>
+            <p data-en="We welcome you by appointment in Montlouis-sur-Loire, fifteen minutes from Tours, for tastings and direct sales.">Nous vous accueillons sur rendez-vous à Montlouis-sur-Loire, à quinze minutes de Tours, pour une dégustation et la vente directe.</p>
+            <a class="big-phone" href="tel:+33247450717">02 47 45 07 17</a>
+            <dl class="visit-card">
+                <div><dt><span data-en="Address">Adresse</span></dt><dd>56 rue de la Pousterie, 37270 Montlouis-sur-Loire</dd></div>
+                <div><dt><span data-en="Mobile">Portable</span></dt><dd><a href="tel:+33676926183">06 76 92 61 83</a></dd></div>
+                <div><dt>E-mail</dt><dd><a href="mailto:domainevincentdenis@gmail.com">domainevincentdenis@gmail.com</a></dd></div>
+                <div><dt><span data-en="Opening">Accueil</span></dt><dd><span data-en="By appointment only">Sur rendez-vous uniquement</span></dd></div>
+            </dl>
+            <a class="btn" href="visite.html#ecrire"><span data-en="Write to us">Nous écrire</span> <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="text-link" style="margin-left:18px" href="https://www.google.com/maps/search/?api=1&amp;query=56+rue+de+la+Pousterie+37270+Montlouis-sur-Loire" target="_blank" rel="noopener"><span data-en="Directions">Itinéraire</span></a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="footer-grid">
+            <div>
+                <h3>Domaine Vincent Denis</h3>
+                <p class="intro" data-en="Living wines from living soils. Winegrowers in Montlouis-sur-Loire, father to son.">Des vins vivants au cœur des sols. Vigneron à Montlouis-sur-Loire, de père en fils.</p>
+            </div>
+            <div>
+                <h3><span data-en="Find us">Nous trouver</span></h3>
+                <p>56 rue de la Pousterie<br>37270 Montlouis-sur-Loire<br><a href="tel:+33247450717">02 47 45 07 17</a></p>
+            </div>
+            <div>
+                <h3><span data-en="Site">Le site</span></h3>
+                <ul>
+                    <li><a href="domaine.html"><span data-en="The estate">Le domaine</span></a></li>
+                    <li><a href="vins.html"><span data-en="Our wines">Nos vins</span></a></li>
+                    <li><a href="visite.html"><span data-en="Visit &amp;amp; contact">Visite &amp; contact</span></a></li>
+                    <li><a href="https://domaine-vincent-denis.plugwine.com" target="_blank" rel="noopener"><span data-en="Online shop">E-boutique</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3><span data-en="Follow us">Suivez-nous</span></h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/p/Domaine-Vincent-Denis-100063820932857/" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="mailto:domainevincentdenis@gmail.com">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wordmark" aria-hidden="true">Vincent Denis</div>
+    <div class="wrap">
+        <div class="footer-bottom">
+            <p>© <span class="year">2026</span> Domaine Vincent Denis · <a href="#"><span data-en="Legal notice">Mentions légales</span></a></p>
+            <p><span data-en="Alcohol abuse is dangerous for your health — please drink responsibly.">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</span></p>
+        </div>
+    </div>
+</footer>
+
+<div class="mockup-badge" role="note"><span data-en="Mock-up · Raphaël Proudhon · placeholder photos">Maquette · Raphaël Proudhon · photos provisoires</span></div>
+
+<script src="assets/js/script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visite & contact – Domaine Vincent Denis</title>
+<meta name="description" content="Dégustation sur rendez-vous au Domaine Vincent Denis, 56 rue de la Pousterie, Montlouis-sur-Loire.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Manrope:wght@400;500;600;700&family=Parisienne&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="header">
+    <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Domaine Vincent Denis, accueil"><b>Vincent Denis</b><small>Montlouis-sur-Loire</small></a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav"><span>Menu</span><i></i></button>
+
+        <nav id="mainNav" aria-label="Navigation principale">
+            <ul><li><a href="domaine.html"><span data-en="The estate">Le domaine</span></a></li><li><a href="vins.html"><span data-en="Our wines">Nos vins</span></a></li><li><a href="visite.html" aria-current="page"><span data-en="Visit">Visite</span></a></li></ul>
+            <div class="nav-actions">
+                <a class="btn" href="https://domaine-vincent-denis.plugwine.com" target="_blank" rel="noopener"><span data-en="Shop">E-boutique</span> <span class="arrow" aria-hidden="true">→</span></a>
+                <div class="lang-switch" role="group" aria-label="Langue">
+                    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+                    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="contenu">
+
+<section class="page-head">
+    <div class="wrap">
+        <span class="script" data-en="Visit…">Visite…</span>
+        <h1 data-en="Come and &lt;em&gt;see us&lt;/em&gt;">Venez <em>nous voir</em></h1>
+        <p data-en="Tastings and direct sales at the estate, by appointment. Fifteen minutes from Tours.">Dégustation et vente directe au domaine, sur rendez-vous. À quinze minutes de Tours.</p>
+    </div>
+</section>
+
+<section class="section section-raised">
+    <div class="wrap visit">
+        <div class="arch"><img src="assets/images/paysage-vigne.webp" alt="Coteaux de vignes (photo provisoire)" loading="lazy"></div>
+        <div>
+            <span class="script" data-en="Visit…">Visite…</span>
+            <h2 data-en="Come and taste &lt;em&gt;at the estate&lt;/em&gt;">Venez déguster <em>au domaine</em></h2>
+            <p data-en="We welcome you by appointment in Montlouis-sur-Loire, fifteen minutes from Tours, for tastings and direct sales.">Nous vous accueillons sur rendez-vous à Montlouis-sur-Loire, à quinze minutes de Tours, pour une dégustation et la vente directe.</p>
+            <a class="big-phone" href="tel:+33247450717">02 47 45 07 17</a>
+            <dl class="visit-card">
+                <div><dt><span data-en="Address">Adresse</span></dt><dd>56 rue de la Pousterie, 37270 Montlouis-sur-Loire</dd></div>
+                <div><dt><span data-en="Mobile">Portable</span></dt><dd><a href="tel:+33676926183">06 76 92 61 83</a></dd></div>
+                <div><dt>E-mail</dt><dd><a href="mailto:domainevincentdenis@gmail.com">domainevincentdenis@gmail.com</a></dd></div>
+                <div><dt><span data-en="Opening">Accueil</span></dt><dd><span data-en="By appointment only">Sur rendez-vous uniquement</span></dd></div>
+            </dl>
+            
+            <a class="text-link" style="margin-left:18px" href="https://www.google.com/maps/search/?api=1&amp;query=56+rue+de+la+Pousterie+37270+Montlouis-sur-Loire" target="_blank" rel="noopener"><span data-en="Directions">Itinéraire</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="ecrire">
+    <div class="wrap form-wrap">
+        <div>
+            <span class="script" data-en="Write to us…">Nous écrire…</span>
+            <h2 data-en="A question, &lt;em&gt;an order?&lt;/em&gt;">Une question, <em>une commande ?</em></h2>
+            <p style="color:var(--text-2);margin-top:20px" data-en="For a tasting, an order for an event or a trade enquiry, leave us a message: we will get back to you quickly.">Pour une dégustation, une commande pour un événement ou une demande professionnelle, laissez-nous un message : nous vous répondons rapidement.</p>
+        </div>
+        <form class="form" id="contactForm">
+            <div class="row">
+                <label><span data-en="Name">Nom</span><input name="nom" type="text" autocomplete="name" required></label>
+                <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+            </div>
+            <label><span data-en="Subject">Objet</span>
+                <select name="objet">
+                    <option data-en="Book a tasting">Réserver une dégustation</option>
+                    <option data-en="Order for an event">Commande pour un événement</option>
+                    <option data-en="Trade enquiry">Professionnels</option>
+                    <option data-en="Other">Autre</option>
+                </select>
+            </label>
+            <label>Message<textarea name="message" required></textarea></label>
+            <button class="btn" type="submit"><span data-en="Send">Envoyer</span> <span class="arrow" aria-hidden="true">→</span></button>
+            <p class="form-ok" hidden><span data-en="Thank you! We will reply shortly. (Mock-up: the form will be connected to the estate&#x27;s inbox.)">Merci ! Nous vous répondons rapidement. (Maquette : le formulaire sera relié à la boîte mail du domaine.)</span></p>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="footer-grid">
+            <div>
+                <h3>Domaine Vincent Denis</h3>
+                <p class="intro" data-en="Living wines from living soils. Winegrowers in Montlouis-sur-Loire, father to son.">Des vins vivants au cœur des sols. Vigneron à Montlouis-sur-Loire, de père en fils.</p>
+            </div>
+            <div>
+                <h3><span data-en="Find us">Nous trouver</span></h3>
+                <p>56 rue de la Pousterie<br>37270 Montlouis-sur-Loire<br><a href="tel:+33247450717">02 47 45 07 17</a></p>
+            </div>
+            <div>
+                <h3><span data-en="Site">Le site</span></h3>
+                <ul>
+                    <li><a href="domaine.html"><span data-en="The estate">Le domaine</span></a></li>
+                    <li><a href="vins.html"><span data-en="Our wines">Nos vins</span></a></li>
+                    <li><a href="visite.html"><span data-en="Visit &amp;amp; contact">Visite &amp; contact</span></a></li>
+                    <li><a href="https://domaine-vincent-denis.plugwine.com" target="_blank" rel="noopener"><span data-en="Online shop">E-boutique</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3><span data-en="Follow us">Suivez-nous</span></h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/p/Domaine-Vincent-Denis-100063820932857/" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="mailto:domainevincentdenis@gmail.com">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wordmark" aria-hidden="true">Vincent Denis</div>
+    <div class="wrap">
+        <div class="footer-bottom">
+            <p>© <span class="year">2026</span> Domaine Vincent Denis · <a href="#"><span data-en="Legal notice">Mentions légales</span></a></p>
+            <p><span data-en="Alcohol abuse is dangerous for your health — please drink responsibly.">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</span></p>
+        </div>
+    </div>
+</footer>
+
+<div class="mockup-badge" role="note"><span data-en="Mock-up · Raphaël Proudhon · placeholder photos">Maquette · Raphaël Proudhon · photos provisoires</span></div>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
