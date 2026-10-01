@@ -105,8 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const translatable = document.querySelectorAll("[data-en]");
     translatable.forEach((el) => { el.dataset.fr = el.innerHTML; });
 
+    // textes alternatifs des photos
+    const altImages = document.querySelectorAll("img[data-en-alt]");
+    altImages.forEach((img) => { img.dataset.frAlt = img.alt; });
+
     function setLang(lang) {
         translatable.forEach((el) => { el.innerHTML = lang === "en" ? el.dataset.en : el.dataset.fr; });
+        altImages.forEach((img) => { img.alt = lang === "en" ? img.dataset.enAlt : img.dataset.frAlt; });
         document.documentElement.lang = lang;
         document.querySelectorAll(".lang-switch button").forEach((b) => {
             b.setAttribute("aria-pressed", b.dataset.lang === lang ? "true" : "false");
